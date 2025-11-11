@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Start Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End Reset */
+
+/* Start Utility Classes */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.cta-heading,
+.cta-text {
+    text-align: center;
+}
+
+/* End Utility Classes */
+
+body {
+    font-size: 15px;
+    font-family: "Outfit";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d6e2f0ff;
+}
+
+.QRcard {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 330px;
+}
+
+.QRimage {
+    height: fit-content;
+}
+
+.QRimage img {
+    max-width: 300px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.cta-heading {
+    font-size: 22px;
+    color: #1f3251ff;
+    margin: 0 20px 16px 20px;
+    line-height: 120%;
+}
+
+.cta-text {
+    color: #68778dff;
+    margin: 0 30px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
