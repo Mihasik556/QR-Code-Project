@@ -37,6 +37,13 @@ body {
     background-color: #d6e2f0ff;
 }
 
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
 .QRcard {
     background-color: white;
     border-radius: 20px;
@@ -62,7 +69,17 @@ body {
 
 .cta-text {
     color: #68778dff;
-    margin: 0 30px;
+    margin: 0 30px 3rem 30px;
     line-height: 140%;
     letter-spacing: 0.2px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+}
+
+.attribution {
+    width: 100%;
+    text-align: center;
 }
