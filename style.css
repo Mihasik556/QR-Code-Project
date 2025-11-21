@@ -11,6 +11,9 @@
 /* End Reset */
 
 /* Start Utility Classes */
+img {
+    display: block;
+}
 
 html {
     height: 100%;
@@ -18,6 +21,10 @@ html {
 
 body {
     min-height: 100%;
+}
+
+.hidden-header {
+    display: none;
 }
 
 .cta-heading,
@@ -28,8 +35,8 @@ body {
 /* End Utility Classes */
 
 body {
-    font-size: 15px;
-    font-family: "Outfit";
+    font: clamp(0.8rem, 2vw, 1rem) "Outfit", "Inter", "Poppins", "Segoe UI",
+        sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,26 +53,27 @@ main {
 
 .QRcard {
     background-color: white;
-    border-radius: 20px;
-    max-width: 330px;
+    border-radius: 1.25rem;
+    width: clamp(290px, 50vw, 330px);
+    box-shadow: 0 10px 20px rgba(31, 50, 81, 0.2);
 }
 
 .QRimage img {
-    max-width: 300px;
-    margin: 15px;
-    border-radius: 12px;
+    width: clamp(250px, 87%, 300px);
+    margin: clamp(0.5rem, 6.5%, 1.5rem);
+    border-radius: 0.75rem;
 }
 
 .cta-heading {
-    font-size: 22px;
+    font-size: clamp(1.25rem, 3vw, 1.4rem);
     color: #1f3251ff;
-    margin: 0 20px 16px 20px;
+    margin: 0 1.25rem 1rem 1.25rem;
     line-height: 120%;
 }
 
 .cta-text {
-    color: #68778dff;
-    margin: 0 30px 3rem 30px;
+    color: #68778d;
+    margin: 0 1.9rem 3rem 1.9rem;
     line-height: 140%;
     letter-spacing: 0.2px;
 }
@@ -82,7 +90,7 @@ footer {
     margin: 1em 0 1em 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
     footer {
         display: flex;
         justify-content: center;
@@ -91,7 +99,7 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 300px;
+        width: min-content;
     }
 
     .nowrap {
@@ -99,42 +107,24 @@ footer {
     }
 }
 
-@media screen and (max-width: 360px) {
-    body {
-        font-size: 13px;
-    }
-
-    .QRimage img {
-        max-width: 270px;
-    }
-
-    .QRcard {
-        max-width: 300px;
-    }
-
-    .cta-heading {
-        font-size: 20px;
-    }
-}
-
 @media screen and (max-height: 431px) {
     body {
-        font-size: 9px;
+        font-size: 0.6rem;
     }
 
     .QRimage img {
-        max-width: 180px;
+        max-width: 11.25rem;
     }
 
     .QRcard {
-        max-width: 210px;
+        max-width: 13.1rem;
     }
 
     .cta-heading {
-        font-size: 13px;
+        font-size: 0.8rem;
     }
 
     .cta-text {
-        margin: 0 20px 20px 25px;
+        margin: 0 1.25rem 1.25rem 1.55rem;
     }
 }
