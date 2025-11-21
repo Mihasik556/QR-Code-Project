@@ -55,7 +55,7 @@ main {
     background-color: white;
     border-radius: 1.25rem;
     width: clamp(290px, 50vw, 330px);
-    box-shadow: 0 10px 20px rgba(31, 50, 81, 0.2);
+    box-shadow: 0 10px 20px rgba(31, 50, 81, 0.15);
 }
 
 .QRimage img {
